@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Zenith Drive Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Contact Modal -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Get in Touch</h3>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone Number">
+        <select id="serviceType">
+          <option value="">Select Service</option>
+          <option value="seo">SEO Optimization</option>
+          <option value="social">Social Media Marketing</option>
+          <option value="content">Content Creation</option>
+          <option value="web-dev">Website Development</option>
+          <option value="web-design">Website Design</option>
+          <option value="consultation">Consultation</option>
+        </select>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="sckelton.html">
+        <img src="images/logo.png" alt="Zenith Drive Logo" height="40">
+      </a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#" class="open-modal">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="services-hero" data-aos="fade-up">
+    <div class="container">
+      <h1>Our Digital Marketing Services</h1>
+      <p>Comprehensive solutions to grow your online presence and drive business growth</p>
+      <button class="cta-button open-modal" data-service="consultation">Get Free Consultation</button>
+    </div>
+  </section>
+
+  <!-- Services Detail Section -->
+  <section class="services-detail">
+    <div class="container">
+      <!-- SEO Service -->
+      <div class="service" data-aos="fade-up">
+        <div class="service-content">
+          <h2>SEO Optimization</h2>
+          <p>Improve your website's visibility in search engines with our comprehensive SEO services. We use proven strategies to help you rank higher for relevant keywords and drive qualified traffic to your site.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Comprehensive keyword research</li>
+            <li><i class="fas fa-check-circle"></i> On-page & technical optimization</li>
+            <li><i class="fas fa-check-circle"></i> Content strategy development</li>
+            <li><i class="fas fa-check-circle"></i> High-quality link building</li>
+            <li><i class="fas fa-check-circle"></i> Local SEO optimization</li>
+          </ul>
+          <button class="cta-button open-modal" data-service="seo">Get SEO Help</button>
+        </div>
+        <div class="service-image" data-aos="fade-left">
+          <img src="images/seo-service.jpg" alt="SEO Service" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Social Media Service -->
+      <div class="service" data-aos="fade-up">
+        <div class="service-image" data-aos="fade-right">
+          <img src="images/social-service.jpg" alt="Social Media Service" loading="lazy">
+        </div>
+        <div class="service-content">
+          <h2>Social Media Marketing</h2>
+          <p>Build your brand and engage with your audience through strategic social media management. We create content that resonates with your target market and drives meaningful interactions.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Platform-specific strategies</li>
+            <li><i class="fas fa-check-circle"></i> Engaging content creation</li>
+            <li><i class="fas fa-check-circle"></i> Community growth management</li>
+            <li><i class="fas fa-check-circle"></i> Targeted paid advertising</li>
+            <li><i class="fas fa-check-circle"></i> Performance analytics</li>
+          </ul>
+          <button class="cta-button open-modal" data-service="social">Boost Your Social</button>
+        </div>
+      </div>
+
+      <!-- Content Service -->
+      <div class="service" data-aos="fade-up">
+        <div class="service-content">
+          <h2>Content Creation</h2>
+          <p>High-quality content that informs, engages, and converts. Our team creates blog posts, articles, videos, and more that establish your authority and drive organic traffic.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> SEO-optimized blog writing</li>
+            <li><i class="fas fa-check-circle"></i> Professional video production</li>
+            <li><i class="fas fa-check-circle"></i> Visual content creation</li>
+            <li><i class="fas fa-check-circle"></i> Email marketing campaigns</li>
+            <li><i class="fas fa-check-circle"></i> Content distribution strategy</li>
+          </ul>
+          <button class="cta-button open-modal" data-service="content">Create Content</button>
+        </div>
+        <div class="service-image" data-aos="fade-left">
+          <img src="images/content-service.jpg" alt="Content Service" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Web Development Service -->
+      <div class="service" data-aos="fade-up">
+        <div class="service-image" data-aos="fade-right">
+          <img src="images/webdev-service.jpg" alt="Web Development Service" loading="lazy">
+        </div>
+        <div class="service-content">
+          <h2>Website Development</h2>
+          <p>Fast, responsive websites built with modern technologies. We create custom solutions tailored to your business needs that deliver exceptional user experiences.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Custom web applications</li>
+            <li><i class="fas fa-check-circle"></i> WordPress solutions</li>
+            <li><i class="fas fa-check-circle"></i> E-commerce platforms</li>
+            <li><i class="fas fa-check-circle"></i> API integrations</li>
+            <li><i class="fas fa-check-circle"></i> Ongoing maintenance</li>
+          </ul>
+          <button class="cta-button open-modal" data-service="web-dev">Build Your Site</button>
+        </div>
+      </div>
+
+      <!-- Design Service -->
+      <div class="service" data-aos="fade-up">
+        <div class="service-content">
+          <h2>Website Design</h2>
+          <p>Beautiful, user-friendly designs that reflect your brand identity. We combine aesthetics with functionality to create websites that convert visitors into customers.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> UI/UX design</li>
+            <li><i class="fas fa-check-circle"></i> Wireframing & prototyping</li>
+            <li><i class="fas fa-check-circle"></i> Responsive design</li>
+            <li><i class="fas fa-check-circle"></i> Brand integration</li>
+            <li><i class="fas fa-check-circle"></i> Conversion optimization</li>
+          </ul>
+          <button class="cta-button open-modal" data-service="web-design">Design Your Site</button>
+        </div>
+        <div class="service-image" data-aos="fade-left">
+          <img src="images/design-service.jpg" alt="Design Service" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" data-aos="fade-up">
+    <div class="container">
+      <h2>Ready to Transform Your Digital Presence?</h2>
+      <p>Get a free 30-minute consultation with our experts to discuss your goals and how we can help you achieve them.</p>
+      <button class="cta-button open-modal" data-service="consultation">Book Free Consultation</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Zenith Drive Digital. Crafted with passion. 🚀</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="connect.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Zenith Drive Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Contact Modal -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Get in Touch</h3>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone Number">
+        <select id="serviceType">
+          <option value="">Select Service</option>
+          <option value="seo">SEO Optimization</option>
+          <option value="social">Social Media Marketing</option>
+          <option value="content">Content Creation</option>
+          <option value="web-dev">Website Development</option>
+          <option value="web-design">Website Design</option>
+          <option value="consultation">Consultation</option>
+        </select>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="sckelton.html">
+        <img src="images/logo.png" alt="Zenith Drive Logo" height="40">
+      </a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#" class="open-modal">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1>We help businesses grow with smart marketing</h1>
+      <p>From strategy to execution, we've got your back.</p>
+      <button class="cta-button open-modal" data-service="audit">Get a Free Audit</button>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Explore Our Offering</h2>
+      <div class="service-cards">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <h3>SEO Optimization</h3>
+          <p>Improve your website ranking and get more organic traffic.</p>
+          <button class="service-button open-modal" data-service="seo">Get SEO Help</button>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="150">
+          <h3>Social Media Marketing</h3>
+          <p>Engage with your audience and build your brand presence online.</p>
+          <button class="service-button open-modal" data-service="social">Get SMM Help</button>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Content Creation</h3>
+          <p>High-quality content that drives leads and conversions.</p>
+          <button class="service-button open-modal" data-service="content">Get Content Help</button>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="250">
+          <h3>Website Development</h3>
+          <p>Fast, responsive websites using modern technologies.</p>
+          <button class="service-button open-modal" data-service="web-dev">Get Dev Help</button>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <h3>Website Design</h3>
+          <p>Visually appealing, user-friendly interfaces that reflect your brand.</p>
+          <button class="service-button open-modal" data-service="web-design">Get Design Help</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Read Our Latest Blog</h2>
+        <p class="section-subtitle">Stay updated with our newest articles and insights</p>
+      </div>
+      
+      <div class="blog-grid" id="blog-posts-preview">
+        <!-- Blog posts loaded dynamically via script.js -->
+        <div class="blog-card skeleton">
+          <div class="skeleton-image"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text short"></div>
+        </div>
+        <div class="blog-card skeleton">
+          <div class="skeleton-image"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text short"></div>
+        </div>
+        <div class="blog-card skeleton">
+          <div class="skeleton-image"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text short"></div>
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <a href="blog.html" class="btn btn-primary">View All Blog Posts <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial" data-aos="fade-up">
+          <p>"Thanks to Randhir's Content strategies, our website traffic doubled within 3 months!"</p>
+          <h4>— Priya Malhotra, Founder of A Fitness Company</h4>
+        </div>
+        <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+          <p>"Randhir helped us rank on the first page for our key services. His blog content was game-changing."</p>
+          <h4>— Rahul Taneja, CEO at A Law Firm</h4>
+        </div>
+        <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+          <p>"I struggled with visibility until Randhir optimized our blogs. Now we get regular leads organically."</p>
+          <h4>— Neha Shah, Marketing Head</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a passionate team of digital marketers and developers dedicated to helping businesses thrive online through innovative strategies and cutting-edge technology.</p>
+      <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<section class="contact" id="contact">
+     <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have a project in mind? Let’s build something great together!</p>
+    <!-- Replace your existing form with this -->
+<form action="https://formsubmit.co/randhir.kumar09134@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New Contact Request">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+  
+      <!-- Replace your website -->
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="tel" name="phone" placeholder="Phone Number">
+  <textarea name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Submit Request</button>
+</form>
+
+    
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+      <p>&copy; 2025 Zenith Drive Digital. Crafted with passion. 🚀</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+   <script>
+
+
+
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+      });
+
+      // Close menu when clicking on nav links
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+          document.body.classList.remove('no-scroll');
+        });
+      });
+    }
+
+    // Modal Functionality
+    const modal = document.getElementById('formModal');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const openModalBtns = document.querySelectorAll('.open-modal');
+
+    function openModal(serviceType = '') {
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+      
+      if (serviceType) {
+        document.getElementById('serviceType').value = serviceType;
+      }
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Modal event listeners
+    if (modal) {
+      closeModalBtn.addEventListener('click', closeModal);
+      
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Escape key to close modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+          closeModal();
+        }
+      });
+    }
+
+    // Open modal buttons
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const service = btn.dataset.service || '';
+        openModal(service);
+      });
+    });
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        
+        try {
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+          
+          // Simulate form submission (replace with actual API call)
+          await new Promise(resolve => setTimeout(resolve, 1500));
+          
+          // Show success message
+          alert('Thank you! Your request has been sent.');
+          contactForm.reset();
+          closeModal();
+        } catch (error) {
+          alert('Oops! Something went wrong. Please try again later.');
+        } finally {
+          // Restore button state
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnText;
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

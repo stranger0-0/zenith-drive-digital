@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio - Zenith Drive</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="sckelton.html">
+        <img src="images/logo.png" alt="Zenith Drive Logo" height="40">
+      </a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="portfolio-hero" data-aos="fade-up">
+    <div class="container">
+      <h1>Our Portfolio</h1>
+      <p>See how we've helped businesses achieve remarkable results</p>
+    </div>
+  </section>
+
+  <section class="portfolio-filters">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">All Projects</button>
+        <button class="filter-button" data-filter="seo">SEO</button>
+        <button class="filter-button" data-filter="social">Social Media</button>
+        <button class="filter-button" data-filter="web">Web Development</button>
+        <button class="filter-button" data-filter="design">Web Design</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-grid">
+    <div class="container">
+      <div class="portfolio-items">
+        <!-- SEO Project 1 -->
+        <div class="portfolio-item" data-aos="fade-up" data-category="seo">
+          <div class="portfolio-image">
+            <img src="images/portfolio-seo1.jpg" alt="SEO Project">
+            <div class="portfolio-overlay">
+              <a href="#" class="view-button">View Case Study</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Law Firm SEO</h3>
+            <p>Increased organic traffic by 320% in 6 months</p>
+            <span class="portfolio-tag">SEO</span>
+          </div>
+        </div>
+
+        <!-- Social Media Project -->
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100" data-category="social">
+          <div class="portfolio-image">
+            <img src="images/portfolio-social1.jpg" alt="Social Media Project">
+            <div class="portfolio-overlay">
+              <a href="#" class="view-button">View Case Study</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Fitness Brand Social</h3>
+            <p>Grew Instagram following from 500 to 15,000 in 3 months</p>
+            <span class="portfolio-tag">Social Media</span>
+          </div>
+        </div>
+
+        <!-- Web Development Project -->
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200" data-category="web">
+          <div class="portfolio-image">
+            <img src="images/portfolio-web1.jpg" alt="Web Development Project">
+            <div class="portfolio-overlay">
+              <a href="#" class="view-button">View Case Study</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>E-commerce Platform</h3>
+            <p>Custom-built online store with 98% uptime</p>
+            <span class="portfolio-tag">Web Development</span>
+          </div>
+        </div>
+
+        <!-- Web Design Project -->
+        <div class="portfolio-item" data-aos="fade-up" data-category="design">
+          <div class="portfolio-image">
+            <img src="images/portfolio-design1.jpg" alt="Web Design Project">
+            <div class="portfolio-overlay">
+              <a href="#" class="view-button">View Case Study</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Healthcare Website</h3>
+            <p>Modern, accessible design with 40% increase in conversions</p>
+            <span class="portfolio-tag">Web Design</span>
+          </div>
+        </div>
+
+        <!-- SEO Project 2 -->
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100" data-category="seo">
+          <div class="portfolio-image">
+            <img src="images/portfolio-seo2.jpg" alt="SEO Project">
+            <div class="portfolio-overlay">
+              <a href="#" class="view-button">View Case Study</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Local Business SEO</h3>
+            <p>Ranked #1 for 15+ local keywords within 4 months</p>
+            <span class="portfolio-tag">SEO</span>
+          </div>
+        </div>
+
+        <!-- Social Media Project 2 -->
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200" data-category="social">
+          <div class="portfolio-image">
+            <img src="images/portfolio-social2.jpg" alt="Social Media Project">
+            <div class="portfolio-overlay">
+              <a href="#" class="view-button">View Case Study</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Restaurant Social</h3>
+            <p>Increased engagement by 500% with video content strategy</p>
+            <span class="portfolio-tag">Social Media</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-cta" data-aos="fade-up">
+    <div class="container">
+      <h2>Ready to see your project here?</h2>
+      <p>Let's work together to create something amazing</p>
+      <a href="contact.html" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zenith Drive Digital. Crafted with passion. 🚀</p>
+  </footer>
+
+  <script src="connect.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+    // Portfolio filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Update active button
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          
+          const filterValue = this.getAttribute('data-filter');
+          
+          // Filter items
+          portfolioItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
